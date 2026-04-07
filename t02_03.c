@@ -15,18 +15,22 @@ int main(int _argv, char **_argc)
     int num;
     for (int i = 0; i < 4; i++) {
         scanf("%d", &num);
-  
+        
         if (num == -1) {
             printf("0\n");
             break;
         }
 
-        if (op == '+') {
-            hasil += num;
-        } else if (op == '-') {
-            hasil -= num;
-        } else if (op == '*') {
-            hasil *= num;
+        if (i == 0) {
+            hasil = num;
+        } else {
+            if (op == '+') {
+                hasil += num;
+            } else if (op == '-') {
+                hasil -= num;
+            } else if (op == '*') {
+                hasil *= num;
+            }
         }
         
         printf("%d\n", hasil);

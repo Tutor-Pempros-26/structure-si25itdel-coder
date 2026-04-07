@@ -20,7 +20,7 @@ int main(int _argv, char **_argc)
 
     if (total_harga_awal > 500000.0) {
         persentase_diskon = 0.15;
-    } else if (total_harga_awal >= 100000.0) {
+    } else if (total_harga_awal > 100000.0) { 
         persentase_diskon = 0.10;
     } else if (buku1.jumlah > 5.0) {
         persentase_diskon = 0.05;
