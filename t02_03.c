@@ -16,7 +16,6 @@ int main(int _argv, char **_argc)
     for (int i = 0; i < 4; i++) {
         scanf("%d", &num);
         
-        // Aturan keluar jika input -1
         if (num == -1) {
             printf("0\n");
             break;
